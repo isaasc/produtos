@@ -20,7 +20,7 @@ public class Produto {
 	private Long idCategoria;
 
 	@NotNull(message = "O fornecedor é obrigatório.")
-	@Min(1)
+	@Min(value = 1, message = "Favor selecionar um fornecedor.")
 	private Long idFornecedor;
 
 	public Long getIdCategoria() {
